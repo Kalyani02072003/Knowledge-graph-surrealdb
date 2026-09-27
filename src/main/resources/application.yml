@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: surreal-db
+
+  graphql:
+    graphiql:
+      enabled: true
+
+surrealdb:
+  url: ws://localhost:8000
+  namespace: knowledge_graph
+  database: books
+  username: root
+  password: root

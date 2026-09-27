@@ -1,0 +1,23 @@
+services:
+  surrealdb:
+    image: surrealdb/surrealdb:latest
+    container_name: surreal-ai-knowledge-graph
+    restart: unless-stopped
+
+    user: "1000"
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./mydata:/data
+
+    command:
+      - start
+      - --log
+      - info
+      - --user
+      - root
+      - --pass
+      - root
+      - rocksdb:/data/database.db

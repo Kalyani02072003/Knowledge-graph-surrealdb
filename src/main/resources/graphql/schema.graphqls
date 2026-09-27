@@ -1,0 +1,30 @@
+type Query {
+    health: String!,
+    aliceBooks: [Book!]!
+    aliceTopics: [Topic!]!
+    semanticSearch(q: String!): [Book!]!
+    recommend(q: String!): [Recommendation!]!
+}
+
+type Mutation {
+    createEmbeddings: String!
+
+    cleanup: String!
+}
+
+type Book {
+    title: String
+    author: String
+    description: String
+}
+
+type Topic {
+    name: String
+}
+
+type Recommendation {
+    book: String
+    author: String
+    similarity: Float
+    topics: [String!]
+}
