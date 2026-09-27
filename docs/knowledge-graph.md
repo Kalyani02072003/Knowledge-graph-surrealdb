@@ -275,4 +275,6 @@ This combination is particularly useful in AI applications such as **GraphRAG**,
 
 ### Key takeaway
 
+[Session PPT](https://docs.google.com/presentation/d/1W5zR_Nzd-hM6NBrAgVwM7Q-fkMNlpcTG/edit?usp=sharing&ouid=117470378100335116173&rtpof=true&sd=true)
+
 > **A knowledge graph does not require a graph database. A relational database can represent a knowledge graph using tables, foreign keys, and join tables. Graph databases such as SurrealDB make relationships and graph traversal a first-class part of the data model, which can make highly connected, relationship-centric workloads more natural to model and query.**
